@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seven And Creative - 창의적인 솔루션을 제공하는 회사</title>
+  <meta name="description" content="Seven And Creative는 혁신적이고 창의적인 디지털 솔루션을 제공하는 전문 기업입니다.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>Seven &<br>Creative</h2>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+
+        <a href="#home" class="nav-link">홈</a>
+        <a href="#about" class="nav-link">회사소개</a>
+        <a href="#services" class="nav-link">서비스</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero"
+    style="display:flex;align-items:center;justify-content:center;text-align:center;min-height:70vh;">
+    <div class="hero-content" style="max-width:960px;">
+      <h1 class="hero-title" style="text-align: start;">창의적인 솔루션<br>비즈니스 혁신</h1>
+      <p class="hero-subtitle">Seven And Creative는 시대에 맞는 혁신적이고 창의적인 솔루션을 제공합니다</p>
+    </div>
+    <!-- hero-image 제거 -->
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>회사 소개</h2>
+      </div>
+
+      <!-- 추가: 그리드 전환/표시개수 제어용 스타일 -->
+      <style>
+        .about-business .categories-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+        }
+
+        .about-business.variant-4 .categories-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .about-business.variant-4 .category-card:nth-child(n+5) {
+          display: none;
+        }
+
+        @media (max-width: 768px) {
+
+          .about-business .categories-grid,
+          .about-business.variant-4 .categories-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+      </style>
+
+      <!-- 단일 컬럼: 각 블록이 한 줄 전체를 차지 -->
+      <div class="about-grid" style="display:grid;grid-template-columns:1fr;gap:2rem;align-items:start;">
+        <!-- 우리의 비전: 한 줄 전체 -->
+        <div class="about-vision">
+          <p style="text-align: center;">Seven And Creative는 창의성과 기술력을 바탕으로 고객의 비즈니스 성장을 돕는 전문 기업입니다.</p>
+          <p style="text-align: center;">우리는 단순한 서비스 제공을 넘어, 고객과 함께 성장하는 파트너가 되고자 합니다.
+          </p>
+        </div>
+
+        <!-- 변경: 주요 사업 분야 블록 교체 -->
+        <div class="about-business variant-6">
+          <h3 style="margin-top:0;">주요 사업 분야</h3>
+          <div class="categories-grid">
+            <!-- 1. 디지털미디어/콘텐츠 -->
+            <div class="category-card"
+              style="background:#f8f9fa;border-radius:16px;padding:1.5rem;box-shadow:0 4px 16px rgba(102,126,234,0.07);">
+              <h4 style="color:#667eea;margin:0 0 .5rem 0;"><i class="fas fa-photo-film"></i> 디지털미디어/콘텐츠
+              </h4>
+              <ul style="margin:0;padding-left:1rem;line-height:1.7;">
+                <li>모바일·유튜브 콘텐츠 제작 및 판매업</li>
+                <li>인터넷·디지털 미디어 콘텐츠 개발·공급 및 관련 서비스업</li>
+                <li>포털 및 기타 인터넷 정보 매개 서비스업</li>
+              </ul>
+            </div>
+
+            <!-- 2. 사진/영상 촬영 -->
+            <div class="category-card"
+              style="background:#f8f9fa;border-radius:16px;padding:1.5rem;box-shadow:0 4px 16px rgba(102,126,234,0.07);">
+              <h4 style="color:#667eea;margin:0 0 .5rem 0;"><i class="fas fa-camera"></i> 사진/영상 촬영</h4>
+              <ul style="margin:0;padding-left:1rem;line-height:1.7;">
+                <li>사진 촬영 및 처리업</li>
+                <li>상업용 사진 촬영업</li>
+                <li>인물 사진 및 행사용 영상 촬영업</li>
+              </ul>
+            </div>
+
+            <!-- 3. 디자인/컨설팅 -->
+            <div class="category-card"
+              style="background:#f8f9fa;border-radius:16px;padding:1.5rem;box-shadow:0 4px 16px rgba(102,126,234,0.07);">
+              <h4 style="color:#667eea;margin:0 0 .5rem 0;"><i class="fas fa-palette"></i> 디자인/컨설팅</h4>
+              <ul style="margin:0;padding-left:1rem;line-height:1.7;">
+                <li>디자인 컨설팅업</li>
+                <li>시각·영상·웹·전문 디자인업</li>
+              </ul>
+            </div>
+
+            <!-- 4. 광고/마케팅/홍보 -->
+            <div class="category-card"
+              style="background:#f8f9fa;border-radius:16px;padding:1.5rem;box-shadow:0 4px 16px rgba(102,126,234,0.07);">
+              <h4 style="color:#667eea;margin:0 0 .5rem 0;"><i class="fas fa-bullhorn"></i> 광고/마케팅/홍보</h4>
+              <ul style="margin:0;padding-left:1rem;line-height:1.7;">
+                <li>광고물·광고매체 기획업</li>
+                <li>문안·도안·설계 등 작성업</li>
+                <li>홍보대행업</li>
+                <li>마케팅·홍보 컨설팅업</li>
+              </ul>
+            </div>
+
+            <!-- 5. 소프트웨어/앱/게임 -->
+            <div class="category-card"
+              style="background:#f8f9fa;border-radius:16px;padding:1.5rem;box-shadow:0 4px 16px rgba(102,126,234,0.07);">
+              <h4 style="color:#667eea;margin:0 0 .5rem 0;"><i class="fas fa-mobile-screen-button"></i> 소프트웨어/앱/게임
+              </h4>
+              <ul style="margin:0;padding-left:1rem;line-height:1.7;">
+                <li>모바일 앱 개발 및 공급업</li>
+                <li>모바일 게임 소프트웨어 개발 및 공급업</li>
+                <li>응용·시스템·AI 소프트웨어 개발 및 공급업</li>
+              </ul>
+            </div>
+
+            <!-- 6. 소프트웨어 서비스/플랫폼 -->
+            <div class="category-card"
+              style="background:#f8f9fa;border-radius:16px;padding:1.5rem;box-shadow:0 4px 16px rgba(102,126,234,0.07);">
+              <h4 style="color:#667eea;margin:0 0 .5rem 0;"><i class="fas fa-network-wired"></i> 소프트웨어 서비스/플랫폼
+              </h4>
+              <ul style="margin:0;padding-left:1rem;line-height:1.7;">
+                <li>소프트웨어 컨설팅·유지보수</li>
+                <li>소프트웨어 판매·유통·임대</li>
+                <li>위치정보·위치기반 서비스</li>
+                <li>인터넷 부가서비스 개발·공급</li>
+                <li>전자상거래·통신판매 중개, 쇼핑몰 운영</li>
+              </ul>
+            </div>
+          </div>
+          <!-- 표시 개수 전환: 6개(3x2) = class "about-business variant-6", 4개(4x1) = class "about-business variant-4" -->
+        </div>
+
+        <!-- 우리의 가치: 한 줄 전체 -->
+        <div class="about-values"
+          style="background:#f8f9fa;border-radius:16px;padding:1.5rem;box-shadow:0 4px 16px rgba(102,126,234,0.07);">
+          <h3>우리의 가치</h3>
+          <div class="values">
+            <div class="value-item">
+              <i class="fas fa-rocket"></i>
+              <div>
+                <h4>혁신</h4>
+                <p>최신 기술과 창의적 아이디어로 혁신적인 솔루션을 제공합니다</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-users"></i>
+              <div>
+                <h4>협력</h4>
+                <p>고객과의 긴밀한 소통을 통해 최적의 결과를 만들어냅니다</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-star"></i>
+              <div>
+                <h4>품질</h4>
+                <p>높은 품질의 서비스로 고객 만족을 최우선으로 합니다</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>서비스</h2>
+        <p>고객의 성공을 위한 전문 서비스</p>
+      </div>
+
+      <!-- 추가: 서비스 그리드 레이아웃 -->
+      <style>
+        .services-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+          .services-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        @media (max-width: 640px) {
+          .services-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+      </style>
+
+      <div class="services-grid">
+        <!-- 1. 디지털미디어/콘텐츠 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-photo-film"></i>
+          </div>
+          <h3>디지털미디어/콘텐츠</h3>
+          <p>디지털 미디어 기반 콘텐츠 기획·제작·유통</p>
+          <ul>
+            <li>모바일·유튜브 콘텐츠 제작 및 판매</li>
+            <li>인터넷·디지털 미디어 콘텐츠 개발·공급 및 관련 서비스</li>
+            <li>포털 및 기타 인터넷 정보 매개 서비스</li>
+            </li>
+        </div>
+
+        <!-- 2. 사진/영상 촬영 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3>사진/영상 촬영</h3>
+          <p>브랜딩과 마케팅을 위한 전문 촬영 서비스</p>
+          <ul>
+            <li>사진 촬영 및 처리</li>
+            <li>상업용 사진 촬영</li>
+            <li>인물 사진 및 행사용 영상 촬영</li>
+          </ul>
+        </div>
+
+        <!-- 3. 디자인/컨설팅 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>디자인/컨설팅</h3>
+          <p>비즈니스 성과를 높이는 종합 디자인 컨설팅</p>
+          <ul>
+            <li>디자인 컨설팅</li>
+            <li>시각·영상·웹·전문 디자인</li>
+          </ul>
+        </div>
+
+        <!-- 4. 광고/마케팅/홍보 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3>광고/마케팅/홍보</h3>
+          <p>데이터 기반 전략과 크리에이티브 실행</p>
+          <ul>
+            <li>광고물·광고매체 기획</li>
+            <li>문안·도안·설계 등 작성</li>
+            <li>홍보대행 및 마케팅·홍보 컨설팅</li>
+          </ul>
+        </div>
+
+        <!-- 5. 소프트웨어/앱/게임 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-mobile-screen-button"></i>
+          </div>
+          <h3>소프트웨어/앱/게임</h3>
+          <p>모바일과 다양한 플랫폼의 제품 개발</p>
+          <ul>
+            <li>모바일 앱 개발 및 공급</li>
+            <li>모바일 게임 소프트웨어 개발 및 공급</li>
+            <li>응용·시스템·AI 소프트웨어 개발 및 공급</li>
+          </ul>
+        </div>
+
+        <!-- 6. 소프트웨어 서비스/플랫폼 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <h3>소프트웨어 허브</h3>
+          <p>다양한 소프트웨어 서비스 제공</p>
+          <ul>
+            <li>소프트웨어 컨설팅·유지보수</li>
+            <li>소프트웨어 판매·유통·임대</li>
+            <li>위치정보·위치기반 서비스</li>
+            <li>인터넷 부가서비스 개발·공급</li>
+            <li>전자상거래·통신판매 중개, 쇼핑몰 운영</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content" style="display:block;text-align:start;">
+        <h3>Seven &amp;<br>Creative</h3>
+        <p>주식회사 세븐앤드크리에이티브 | 대표이사 조원호 | 경남 김해시 율하카페길85 2층</p>
+        <p>사업자등록번호 000-00-00000 | 통신판매업신고 2025-0000-00000 | 고객지원 help@sevenandcreative.com</p>
+        <!-- 추가: 카피라이트 -->
+        <p style="margin-top:.5rem;">&copy; 2025 Seven And Creative Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
